@@ -15,9 +15,7 @@ jobs:
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.SSH_PORT }}
           script: |
             cd /Users/veer/Desktop/Sripad2003/Tic-Tac-Toe-Multiplayer-Game
             git pull
