@@ -1,6 +1,6 @@
 services:
   web:
     build: .
+    container_name: html-css-js-app
     ports:
-      - "8000:8000"
-  
+      - "8081:8080"
